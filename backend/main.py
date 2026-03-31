@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from schemes import match_schemes, schemes as local_schemes
+from backend.schemes import match_schemes, schemes as local_schemes
 import json, os
 
 app = FastAPI(title="Govt Scheme Recommender")
